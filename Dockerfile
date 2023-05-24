@@ -1,4 +1,4 @@
-FROM python:3.9-slim-buster as builder
+FROM python:3.11-slim-buster as builder
 
 RUN apt-get install -y --no-install-recommends \
     build-essential= \
