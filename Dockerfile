@@ -1,8 +1,15 @@
-FROM python:3.9-slim-buster as builder
+FROM python:3.11-alpine as builder
 
-RUN apt-get install -y --no-install-recommends \
-    build-essential= \
-    gcc= \
-    git= \
-    python3-pip= \
-    && rm -rf /var/lib/apt/lists/*
+WORKDIR /tmp
+
+RUN apk add --no-cache \
+    gcc \
+    musl-dev \
+    libffi-dev \
+    openssl-dev && \
+    pip install --no-cache-dir hatch
+
+COPY ./pyproject.toml /tmp/
+
+RUN adduser --disabled-password --gecos '' hatch && \
+    chown -R hatch:hatch /tmp
