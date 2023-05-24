@@ -1,12 +1,44 @@
+import doctest
+
+
 def return_char(chars: list[str]) -> str:
-    l, r = 0, len(chars) - 1
-    m = l + (r - l) // 2
-    char_vals = [ord(c) for c in chars]
-    while l < m:
-        if char_vals[l]+1 != char_vals[l+1]:
-            return chr(char_vals[l]+1)
-        l += 1
-    while r >= m:
-        if char_vals[r]-1 != char_vals[r-1]:
-            return chr(char_vals[r]-1)
-        r -= 1
+    """Return the missing character from an ordered list of characters.
+
+    :param chars: list[str]
+    :return: str
+
+    >>> return_char(['a', 'b', 'c', 'd', 'f'])
+    'e'
+
+    >>> return_char(['O', 'Q', 'R', 'S'])
+    'P'
+
+    >>> return_char(['a', 'b', 'c', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l'])
+    'd'
+
+    >>> return_char(['A', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L'])
+    'B'
+
+    >>> return_char([])
+    ''
+    """
+    if not chars:
+        return ""
+
+    left_pointer: int = 0
+    right_pointer: int = len(chars) - 1
+    midpoint: int = left_pointer + (right_pointer - left_pointer) // 2
+    char_vals: list[int] = [ord(c) for c in chars]
+
+    while left_pointer < midpoint:
+        if char_vals[left_pointer] + 1 != char_vals[left_pointer + 1]:
+            return chr(char_vals[left_pointer] + 1)
+        left_pointer += 1
+
+    while right_pointer >= midpoint:
+        if char_vals[right_pointer] - 1 != char_vals[right_pointer - 1]:
+            return chr(char_vals[right_pointer] - 1)
+        right_pointer -= 1
+
+
+doctest.testmod()
