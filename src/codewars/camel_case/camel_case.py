@@ -36,10 +36,10 @@ def to_camel_case(text: str) -> str:
     if not text:
         return text
 
-    text = text.replace('-', '_')
-    text = text.split('_')
+    text = text.replace("-", "_")
+    text = text.split("_")
 
-    return text[0] + ''.join([word.capitalize() for word in text[1:]])
+    return text[0] + "".join([word.capitalize() for word in text[1:]])
 
 
 doctest.testmod()
