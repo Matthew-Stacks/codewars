@@ -1,6 +1,8 @@
 """
-    NAME: camel_case.py
-    TAGS: string, case, camelcase
+    NAME:           camel_case.py
+    DESC:           This file contains a function that converts a string to camel case.
+    DIFFICULTY:     6kyu
+    TAGS:           string, case, camelcase
 """
 import doctest
 
