@@ -7,7 +7,7 @@ def well(x: list[str]) -> str | int:
             return "Fail!"
         case n if 0 < n < series_min:
             return "Publish!"
-        case n:
-            if n >= series_min:
-                return "I smell a series!"
-    return -1
+        case n if n >= series_min:
+            return "I smell a series!"
+        case _:
+            return -1
