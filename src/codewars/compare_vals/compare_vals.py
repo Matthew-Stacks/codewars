@@ -1,9 +1,19 @@
-def xo(s: str) -> bool:
-    """
+"""
+    NAME:           cmp_x2o.py
+    DESC:           Compares the number of `x` and `o` in string `s`.
+    DIFFICULTY:     7kyu
+    TAGS:           string, list, count, boolean
+"""
+import doctest
+
+
+def cmp_x2o(s: str) -> bool:
+    """Compares the number of `x` and `o` in string `s`.
+
     :param s: string to check
     :return: true if number of x's and o's are equal, false otherwise
 
-    >>> xo("ooxx")
+    >>> cmp_vals("ooxx")
     true
     >>> xo("xooxx")
     false
@@ -15,3 +25,6 @@ def xo(s: str) -> bool:
     false
     """
     return s.lower().count("x") == s.lower().count("o")
+
+
+doctest.testmod()
