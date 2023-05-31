@@ -1,5 +1,5 @@
 """
-    NAME:           cmp_x2o.py
+    NAME:           cmp_xo.py
     DESC:           Compares the number of `x` and `o` in string `s`.
     DIFFICULTY:     7kyu
     TAGS:           string, list, count, boolean
@@ -7,21 +7,21 @@
 import doctest
 
 
-def cmp_x2o(s: str) -> bool:
+def cmp_xo(s: str) -> bool:
     """Compares the number of `x` and `o` in string `s`.
 
     :param s: string to check
     :return: true if number of x's and o's are equal, false otherwise
 
-    >>> cmp_vals("ooxx")
+    >>> cmp_xo("ooxx")
     true
-    >>> xo("xooxx")
+    >>> cmp_xo("xooxx")
     false
-    >>> xo("ooxXm")
+    >>> cmp_xo("ooxXm")
     true
-    >>> xo("zpzpzpp")
+    >>> cmp_xo("zpzpzpp")
     true
-    >>> xo("zzoo")
+    >>> cmp_xo("zzoo")
     false
     """
     return s.lower().count("x") == s.lower().count("o")
