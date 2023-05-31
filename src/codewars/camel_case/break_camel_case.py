@@ -1,3 +1,11 @@
+"""
+    NAME:           break_camel_case.py
+    DESC:           This file contains a function that converts a string to camel case.
+    DIFFICULTY:     6kyu
+    TAGS:           string, case, camelcase
+"""
+
+
 def break_camel_case(s: str) -> str:
     """
     :param s: string to break
