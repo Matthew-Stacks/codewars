@@ -2,11 +2,12 @@ import doctest
 
 
 def square_digits(num: int) -> int:
-    """Square each digit in `num`.
-    square it and return the result as a string.
+    """For each digit in `num`, square that digit and convert to type str.
+    Once all digits have been squared, join them together and convert to type int.
 
-    :param num: number to square
-    :return: squared number
+    :param num: number to square digits of
+    :return: squared numbers joined together
+
     >>> square_digits(9119)
     811181
     """
