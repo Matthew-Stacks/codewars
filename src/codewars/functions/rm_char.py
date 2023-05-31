@@ -1,8 +1,8 @@
 import doctest
 
 
-def remove_char(s: str) -> str:
-    """Remove first and last characters from string.
+def rm_char(s: str) -> str:
+    """Remove first and last characters from string `s`.
 
     :param s: string to remove characters from
     :return: string with first and last characters removed
