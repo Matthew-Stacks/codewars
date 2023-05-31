@@ -1,5 +1,5 @@
 """
-    NAME:           camel_case.py
+    NAME:           to_camel_case.py
     DESC:           This file contains a function that converts a string to camel case.
     DIFFICULTY:     6kyu
     TAGS:           string, case, camelcase
