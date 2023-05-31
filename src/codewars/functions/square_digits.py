@@ -8,6 +8,16 @@ def square_digits(num: int) -> int:
     :param num: number to square digits of
     :return: squared numbers joined together
 
+    >>> square_digits(0)
+    0
+    >>> square_digits(1)
+    1
+    >>> square_digits(12)
+    14
+    >>> square_digits(123)
+    149
+    >>> square_digits(1234)
+    14916
     >>> square_digits(9119)
     811181
     """

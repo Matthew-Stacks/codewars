@@ -1,7 +1,7 @@
 import doctest
 
 
-def return_char(chars: list[str]) -> str:
+def return_char(chars: list[str]) -> str | None:
     """Return the missing character from an ordered list of characters.
 
     :param chars: list[str]
@@ -9,16 +9,12 @@ def return_char(chars: list[str]) -> str:
 
     >>> return_char(['a', 'b', 'c', 'd', 'f'])
     'e'
-
     >>> return_char(['O', 'Q', 'R', 'S'])
     'P'
-
     >>> return_char(['a', 'b', 'c', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l'])
     'd'
-
     >>> return_char(['A', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L'])
     'B'
-
     >>> return_char([])
     ''
     """
