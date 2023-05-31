@@ -1,7 +1,7 @@
 import doctest
 
 
-def find_next_square(sq):
+def find_next_square(sq: int) -> int:
     """Return the next square if sq is a square, -1 otherwise
 
     :param sq: number to check
