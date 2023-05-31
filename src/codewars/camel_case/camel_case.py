@@ -1,9 +1,7 @@
 """
-    CamelCase Method
+    NAME: camel_case.py
     TAGS: string, case, camelcase
 """
-
-
 import doctest
 
 
