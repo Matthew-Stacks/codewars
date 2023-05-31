@@ -1,3 +1,9 @@
+"""
+    CamelCase Method
+    TAGS: string, case, camelcase
+"""
+
+
 import doctest
 
 
