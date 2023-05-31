@@ -1,6 +1,6 @@
 """
     NAME:           break_camel_case.py
-    DESC:           This file contains a function that converts a string to camel case.
+    DESC:           This file contains a function that joins words in a string to camel case.
     DIFFICULTY:     6kyu
     TAGS:           string, case, camelcase
 """
