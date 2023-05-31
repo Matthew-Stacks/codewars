@@ -1,23 +1,23 @@
 import doctest
 
 
-def rm_char(s: str) -> str:
+def rm_chars(s: str) -> str:
     """Remove first and last characters from string `s`.
 
     :param s: string to remove characters from
     :return: string with first and last characters removed
 
-    >>> remove_char('')
+    >>> rm_chars('')
     ''
-    >>> remove_char('a')
+    >>> rm_chars('a')
     ''
-    >>> remove_char('ab')
+    >>> rm_chars('ab')
     ''
-    >>> remove_char('abc')
+    >>> rm_chars('abc')
     'b'
-    >>> remove_char('abcd')
+    >>> rm_chars('abcd')
     'bc'
-    >>> remove_char('abcde')
+    >>> rm_chars('abcde')
     'bcd'
     """
     return s[1:-1]
