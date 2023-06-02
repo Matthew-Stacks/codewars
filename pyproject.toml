@@ -21,7 +21,7 @@ classifiers = [
   "Programming Language :: Python :: Implementation :: CPython",
   "Programming Language :: Python :: Implementation :: PyPy",
 ]
-dependencies = []
+dependencies = ["numpy"]
 
 [project.optional-dependencies]
 docs = [
@@ -63,13 +63,14 @@ dependencies = [
   "black",
   "coverage[toml]>=6.5",
   "interrogate",
+  "numpy",
   "mypy",
   "pytest",
   "pytest-cov",
   "pytest-mock",
   "pytest-sugar",
   "pytest-xdist",
-  "ruff"
+  "ruff",
 ]
 [tool.hatch.envs.default.scripts]
 test = "pytest {args:tests}"
