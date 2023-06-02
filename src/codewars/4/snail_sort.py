@@ -4,9 +4,6 @@ import doctest
 def snail(snail_map: list[list[int]]) -> list[int] | None:
     """Given an n x n array `snail_map`, return an array with dimensions 1 x (n ** 2).
     Arrange the transformed array by placing the outermost elements leftmost in the new array.
-    Work clockwise towards the center.
-    Because all valid inputs are n x n squares, the center element of the input array
-    will be the last and rightmost element of the output array.
 
     :param snail_map: A square array of integers.
     :return: A flattened array of integers.
