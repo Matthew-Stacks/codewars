@@ -10,15 +10,16 @@ def gen_hashtag(s: str) -> str | bool:
 
     >>> gen_hashtag('')
     False
-    >>> gen_hashtag('HelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorld!')
+    >>> gen_hashtag(f'HelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorld'+
+    'HelloWorldHelloWorldHelloWorldHelloWorldHelloWorld!')
     False
     >>> gen_hashtag('Do We have A Hashtag')
     '#DoWeHaveAHashtag'
     >>> gen_hashtag('Codewars')
     '#Codewars'
     """
-    hashtag_max_length: int = 140
-    if not s or len(s) > hashtag_max_length:
+    hashtag_max_len: int = 140
+    if not s or len(s) > hashtag_max_len:
         return False
 
     return "#" + "".join(word.capitalize() for word in s.split())
