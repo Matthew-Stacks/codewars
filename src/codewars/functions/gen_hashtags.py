@@ -10,8 +10,7 @@ def gen_hashtag(s: str) -> str | bool:
 
     >>> gen_hashtag('')
     False
-    >>> gen_hashtag(f'HelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorld'+
-    'HelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorld!')
+    >>> gen_hashtag(f'{"HelloWorld" * 11}')
     False
     >>> gen_hashtag('Do We have A Hashtag')
     '#DoWeHaveAHashtag'
